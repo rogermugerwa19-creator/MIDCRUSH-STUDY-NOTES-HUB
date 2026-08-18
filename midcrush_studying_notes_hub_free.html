@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Midcrush's Studying Notes Hub</title>
+<style>
+:root{--gold:#d4af37;--black:#080808;--dark:#121212;--white:#fff;--muted:#b9b9b9}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:var(--black);color:var(--white);line-height:1.6}
+header{background:#050505;border-bottom:1px solid #292929;position:sticky;top:0;z-index:10}
+nav{max-width:1100px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;color:var(--gold);font-size:20px}
+nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{max-width:1100px;margin:auto;padding:85px 22px 70px;text-align:center}
+.badge{display:inline-block;border:1px solid #6b5718;color:var(--gold);padding:7px 14px;border-radius:20px;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.05;margin-bottom:18px}
+h1 span{color:var(--gold)}
+.hero p{max-width:650px;margin:0 auto 28px;color:var(--muted);font-size:18px}
+.btn{display:inline-block;background:var(--gold);color:#090909;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:700}
+section{max-width:1100px;margin:auto;padding:45px 22px}
+.section-title{text-align:center;margin-bottom:28px}
+.section-title h2{font-size:32px}
+.section-title p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.card{background:var(--dark);border:1px solid #292929;border-radius:12px;padding:24px}
+.card h3{margin-bottom:8px;color:var(--gold)}
+.card p{color:var(--muted);font-size:14px}
+.subject{transition:.2s}
+.subject:hover{transform:translateY(-3px);border-color:#6b5718}
+.product{display:flex;flex-direction:column;gap:10px}
+.price{font-size:20px;font-weight:800;color:var(--gold)}
+.product .btn{margin-top:auto;text-align:center}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.step{text-align:center}
+.number{width:38px;height:38px;border:1px solid var(--gold);color:var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;font-weight:800}
+footer{border-top:1px solid #292929;text-align:center;padding:30px 20px;color:var(--muted);font-size:13px}
+@media(max-width:650px){nav{flex-direction:column;gap:12px}nav a{margin:0 7px}.hero{padding-top:60px}}
+
+.class-panel{display:none;margin-top:22px}
+.class-panel:target{display:block}
+.class-panel h3{color:var(--gold);margin-bottom:15px}
+.subject-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.subject-link{display:block;background:#171717;border:1px solid #303030;border-radius:9px;padding:14px;color:#fff;text-decoration:none;text-align:center;font-weight:700}
+.subject-link:hover{border-color:var(--gold);color:var(--gold)}
+.back{display:inline-block;margin-top:18px;color:var(--gold);text-decoration:none;font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">MIDCRUSH'S STUDYING NOTES HUB</div>
+<div>
+<a href="#home">Home</a><a href="#classes">Classes</a><a href="#tips">Answering Tips</a><a href="#notes">Free Notes</a><a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="badge">STUDY • REVISE • SUCCEED</div>
+<h1>Study smarter with <span>quality notes.</span></h1>
+<p>Welcome to Midcrush's Studying Notes Hub — a student-friendly place to find class materials, PDF notes, educational videos and New Curriculum answering tips.</p>
+<a class="btn" href="#notes">Browse Free Notes</a>
+</section>
+
+
+
+<section id="classes">
+<div class="section-title">
+<h2>Choose Your Class</h2>
+<p>Choose your class first, then select a subject.</p>
+</div>
+
+<div class="grid">
+<a class="card subject" href="#s1"><h3>S.1</h3><p>Choose S.1 subjects</p></a>
+<a class="card subject" href="#s2"><h3>S.2</h3><p>Choose S.2 subjects</p></a>
+<a class="card subject" href="#s3"><h3>S.3</h3><p>Choose S.3 subjects</p></a>
+<a class="card subject" href="#s4"><h3>S.4</h3><p>Choose S.4 subjects</p></a>
+<a class="card subject" href="#s5"><h3>S.5</h3><p>Choose S.5 subjects</p></a>
+<a class="card subject" href="#s6"><h3>S.6</h3><p>Choose S.6 subjects</p></a>
+</div>
+
+<div id="s1" class="class-panel card"><h3>S.1 Subjects</h3><div class="subject-list">
+<a class="subject-link" href="#notes">Mathematics</a><a class="subject-link" href="#notes">Biology</a><a class="subject-link" href="#notes">Chemistry</a><a class="subject-link" href="#notes">Physics</a><a class="subject-link" href="#notes">English</a><a class="subject-link" href="#notes">ICT</a><a class="subject-link" href="#notes">Geography</a><a class="subject-link" href="#notes">History</a>
+</div><a class="back" href="#classes">← Back to classes</a></div>
+
+<div id="s2" class="class-panel card"><h3>S.2 Subjects</h3><div class="subject-list">
+<a class="subject-link" href="#notes">Mathematics</a><a class="subject-link" href="#notes">Biology</a><a class="subject-link" href="#notes">Chemistry</a><a class="subject-link" href="#notes">Physics</a><a class="subject-link" href="#notes">English</a><a class="subject-link" href="#notes">ICT</a><a class="subject-link" href="#notes">Geography</a><a class="subject-link" href="#notes">History</a>
+</div><a class="back" href="#classes">← Back to classes</a></div>
+
+<div id="s3" class="class-panel card"><h3>S.3 Subjects</h3><div class="subject-list">
+<a class="subject-link" href="#notes">Mathematics</a><a class="subject-link" href="#notes">Biology</a><a class="subject-link" href="#notes">Chemistry</a><a class="subject-link" href="#notes">Physics</a><a class="subject-link" href="#notes">English</a><a class="subject-link" href="#notes">ICT</a><a class="subject-link" href="#notes">Geography</a><a class="subject-link" href="#notes">History</a>
+</div><a class="back" href="#classes">← Back to classes</a></div>
+
+<div id="s4" class="class-panel card"><h3>S.4 Subjects</h3><div class="subject-list">
+<a class="subject-link" href="#notes">Mathematics</a><a class="subject-link" href="#notes">Biology</a><a class="subject-link" href="#notes">Chemistry</a><a class="subject-link" href="#notes">Physics</a><a class="subject-link" href="#notes">English</a><a class="subject-link" href="#notes">ICT</a><a class="subject-link" href="#notes">Geography</a><a class="subject-link" href="#notes">History</a>
+</div><a class="back" href="#classes">← Back to classes</a></div>
+
+<div id="s5" class="class-panel card"><h3>S.5 Subjects</h3><div class="subject-list">
+<a class="subject-link" href="#notes">Mathematics</a><a class="subject-link" href="#notes">Biology</a><a class="subject-link" href="#notes">Chemistry</a><a class="subject-link" href="#notes">Physics</a><a class="subject-link" href="#notes">English</a><a class="subject-link" href="#notes">ICT</a><a class="subject-link" href="#notes">Geography</a><a class="subject-link" href="#notes">History</a>
+</div><a class="back" href="#classes">← Back to classes</a></div>
+
+<div id="s6" class="class-panel card"><h3>S.6 Subjects</h3><div class="subject-list">
+<a class="subject-link" href="#notes">Mathematics</a><a class="subject-link" href="#notes">Biology</a><a class="subject-link" href="#notes">Chemistry</a><a class="subject-link" href="#notes">Physics</a><a class="subject-link" href="#notes">English</a><a class="subject-link" href="#notes">ICT</a><a class="subject-link" href="#notes">Geography</a><a class="subject-link" href="#notes">History</a>
+</div><a class="back" href="#classes">← Back to classes</a></div>
+</section>
+
+
+<section id="subjects">
+<div class="section-title"><h2>Subjects</h2><p>More subjects can be added as your collection grows.</p></div>
+<div class="grid">
+<div class="card subject"><h3>Mathematics</h3><p>Revision notes and learning materials.</p><a class="btn" href="#notes">View Materials</a></div>
+<div class="card subject"><h3>Biology</h3><p>Revision notes and learning materials.</p><a class="btn" href="#notes">View Materials</a></div>
+<div class="card subject"><h3>Chemistry</h3><p>Revision notes and learning materials.</p><a class="btn" href="#notes">View Materials</a></div>
+<div class="card subject"><h3>Physics</h3><p>Revision notes and learning materials.</p><a class="btn" href="#notes">View Materials</a></div>
+<div class="card subject"><h3>English</h3><p>Revision notes and learning materials.</p><a class="btn" href="#notes">View Materials</a></div>
+<div class="card subject"><h3>ICT</h3><p>Revision notes and learning materials.</p><a class="btn" href="#notes">View Materials</a></div>
+</div>
+</section>
+
+
+<section id="tips">
+<div class="section-title"><h2>New Curriculum Answering Tips</h2><p>Learn how to approach questions and present answers clearly.</p></div>
+<div class="grid">
+<div class="card product"><h3>📄 Answering Tip PDFs</h3><p>Free New Curriculum answering guides, subject tips and revision materials.</p><a class="btn" href="#notes">View Free Notes</a></div>
+<div class="card product"><h3>🎥 Answering Tip Videos</h3><p>Educational videos can be linked here to help students answer different types of questions.</p><a class="btn" href="#tips">View Tips</a></div>
+<div class="card product"><h3>📝 Subject Tips</h3><p>Organize answering tips by Mathematics, Sciences, Languages, ICT and other subjects.</p><a class="btn" href="#tips">Explore Tips</a></div>
+</div>
+</section>
+
+<section id="notes">
+<div class="section-title"><h2>Free Notes</h2><p>All notes and study materials on this website are free to access.</p></div>
+<div class="grid">
+<div class="card product"><h3>Mathematics Revision Notes</h3><p>Free revision notes and learning materials.</p><a class="btn" href="#" onclick="alert('Add your Mathematics PDF link here.'); return false;">Open Notes</a></div>
+<div class="card product"><h3>Biology Revision Notes</h3><p>Free revision notes and learning materials.</p><a class="btn" href="#" onclick="alert('Add your Biology PDF link here.'); return false;">Open Notes</a></div>
+<div class="card product"><h3>Chemistry Revision Notes</h3><p>Free revision notes and learning materials.</p><a class="btn" href="#" onclick="alert('Add your Chemistry PDF link here.'); return false;">Open Notes</a></div>
+<div class="card product"><h3>Physics Revision Notes</h3><p>Free revision notes and learning materials.</p><a class="btn" href="#" onclick="alert('Add your Physics PDF link here.'); return false;">Open Notes</a></div>
+<div class="card product"><h3>English Revision Notes</h3><p>Free revision notes and learning materials.</p><a class="btn" href="#" onclick="alert('Add your English PDF link here.'); return false;">Open Notes</a></div>
+<div class="card product"><h3>ICT Revision Notes</h3><p>Free revision notes and learning materials.</p><a class="btn" href="#" onclick="alert('Add your ICT PDF link here.'); return false;">Open Notes</a></div>
+</div>
+</section>
+
+<section>
+<div class="section-title"><h2>How It Works</h2><p>Simple steps for students.</p></div>
+<div class="how">
+<div class="card step"><div class="number">1</div><h3>Choose</h3><p>Choose your class and subject.</p></div>
+<div class="card step"><div class="number">2</div><h3>Open</h3><p>Open the free notes or study material you need.</p></div>
+<div class="card step"><div class="number">3</div><h3>Study</h3><p>Read, revise and practise using the materials.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="section-title"><h2>Contact</h2><p>Add your real contact details when you're ready to launch.</p></div>
+<div class="card" style="text-align:center">
+<p>WhatsApp: <strong>ADD YOUR NUMBER</strong></p>
+<p>Email: <strong>ADD YOUR EMAIL</strong></p>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Midcrush's Studying Notes Hub. All rights reserved.</footer>
+</body>
+</html>
